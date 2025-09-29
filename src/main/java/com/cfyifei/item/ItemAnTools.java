@@ -67,17 +67,17 @@ public class ItemAnTools extends ItemTool {
                     if (par2World.getBlock(i, j + 1, k) == Blocks.air) {
                         par2World.setBlock(i, j + 1, k, Blocks.torch);
                         par2World.playSound(par3EntityPlayer.posX, par3EntityPlayer.posY, par3EntityPlayer.posZ, "step.stone", 1F, 1F, false);
-                        par1ItemStack.setMetadata(par1ItemStack.getMetadata() + 5);
+                        par1ItemStack.setItemDamage(par1ItemStack.getItemDamage() + 5);
                     } else {
                         if (par2World.getBlock(i + 1, j, k) == Blocks.air) {
                             par2World.setBlock(i + 1, j, k, Blocks.torch);
                             par2World.playSound(par3EntityPlayer.posX, par3EntityPlayer.posY, par3EntityPlayer.posZ, "step.stone", 1F, 1F, false);
-                            par1ItemStack.setMetadata(par1ItemStack.getMetadata() + 5);
+                            par1ItemStack.setItemDamage(par1ItemStack.getItemDamage() + 5);
                         } else {
                             if (par2World.getBlock(i, j, k + 1) == Blocks.air) {
                                 par2World.setBlock(i, j, k + 1, Blocks.torch);
                                 par2World.playSound(par3EntityPlayer.posX, par3EntityPlayer.posY, par3EntityPlayer.posZ, "step.stone", 1F, 1F, false);
-                                par1ItemStack.setMetadata(par1ItemStack.getMetadata() + 5);
+                                par1ItemStack.setItemDamage(par1ItemStack.getItemDamage() + 5);
                             }
 
                         }
@@ -87,13 +87,13 @@ public class ItemAnTools extends ItemTool {
                 if (par1ItemStack.getItem() == ModItem.ItemAnbiTools) {
                     par2World.playSound(par3EntityPlayer.posX, par3EntityPlayer.posY, par3EntityPlayer.posZ, "random.orb", 1F, 1F, false);
                     par3EntityPlayer.setHealth(20F);
-                    par1ItemStack.setMetadata(par1ItemStack.getMetadata() + 5);
+                    par1ItemStack.setItemDamage(par1ItemStack.getItemDamage() + 5);
                 }
 
             }
 
 
-            if (par1ItemStack.getMetadata() >= 2000) {
+            if (par1ItemStack.getItemDamage() >= 2000) {
                 --par1ItemStack.stackSize;
                 par2World.playSound(par3EntityPlayer.posX, par3EntityPlayer.posY, par3EntityPlayer.posZ, "random.break", 1F, 1F, false);
             }

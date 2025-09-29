@@ -8,7 +8,7 @@ import net.minecraft.world.World;
 public class ItemCaidaoLBS extends Item implements IItemKitchenKnife {
 
     public ItemCaidaoLBS() {
-        this.setMaxDurability(960);
+        this.setMaxDamage(960);
         this.setMaxStackSize(1);
     }
 

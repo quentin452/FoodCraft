@@ -46,8 +46,9 @@ public class ContainerCaiban extends Container {
         return this.furnaceIn.isUseableByPlayer(playerIn);
     }
 
-    public void onCraftGuiOpened(ICrafting par1ICrafting) {
-        super.onCraftGuiOpened(par1ICrafting);
+    @Override
+    public void addCraftingToCrafters(ICrafting par1ICrafting) {
+        super.addCraftingToCrafters(par1ICrafting);
         par1ICrafting.sendProgressBarUpdate(this, 0, this.furnaceIn.furnaceCookTime);
         par1ICrafting.sendProgressBarUpdate(this, 1, this.furnaceIn.tableBurnTime);
         par1ICrafting.sendProgressBarUpdate(this, 2, this.furnaceIn.currentItemBurnTime);
@@ -109,7 +110,7 @@ public class ContainerCaiban extends Container {
 
                 slot.onSlotChange(itemstack1, itemstack);
             } else if (p_82846_2_ != 1 && p_82846_2_ != 0) {
-                if (FurnaceRecipes.instance().getSmeltingResult(itemstack1) != null) {
+                if (FurnaceRecipes.smelting().getSmeltingResult(itemstack1) != null) {
                     if (!this.mergeItemStack(itemstack1, 0, 1, false)) {
                         return null;
                     }

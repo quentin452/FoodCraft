@@ -49,7 +49,7 @@ public class TileEntityZl extends TileEntity implements IInventory {
             }
             if (item instanceof ItemTool && ((ItemTool) item).getToolMaterialName().equals("WOOD")) return 400;
             if (item instanceof ItemSword && ((ItemSword) item).getToolMaterialName().equals("WOOD")) return 400;
-            if (item instanceof ItemHoe && ((ItemHoe) item).getMaterialName().equals("WOOD")) return 400;
+            if (item instanceof ItemHoe && ((ItemHoe) item).getToolMaterialName().equals("WOOD")) return 400;
             if (item == Items.stick) return 400;
             if (item == Items.coal) return 3200;
             if (item == Items.lava_bucket) return 40000;
@@ -171,7 +171,7 @@ public class TileEntityZl extends TileEntity implements IInventory {
      * Returns if the inventory is named
      */
     @Override
-    public boolean isCustomInventoryName() {
+    public boolean hasCustomInventoryName() {
         return false;
     }
 
@@ -188,12 +188,12 @@ public class TileEntityZl extends TileEntity implements IInventory {
     }
 
     @Override
-    public void openChest() {
+    public void openInventory() {
 
     }
 
     @Override
-    public void closeChest() {
+    public void closeInventory() {
 
     }
 

@@ -166,7 +166,7 @@ public class TileEntityPDG extends TileEntity implements IInventory {
      * Returns if the inventory is named
      */
     @Override
-    public boolean isCustomInventoryName() {
+    public boolean hasCustomInventoryName() {
         return false;
     }
 
@@ -183,12 +183,12 @@ public class TileEntityPDG extends TileEntity implements IInventory {
     }
 
     @Override
-    public void openChest() {
+    public void openInventory() {
 
     }
 
     @Override
-    public void closeChest() {
+    public void closeInventory() {
 
     }
 

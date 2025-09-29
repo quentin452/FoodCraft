@@ -25,13 +25,13 @@ public class ItemBinggan extends ItemFcFood {
 
     @SideOnly(Side.CLIENT)
     public boolean hasEffect(ItemStack p_77636_1_) {
-        return p_77636_1_.getMetadata() == 1;
+        return p_77636_1_.getItemDamage() == 1;
     }
 
     @Override
     protected void onFoodEaten(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer) {
 
-        if (par1ItemStack.getMetadata() == 1) {
+        if (par1ItemStack.getItemDamage() == 1) {
             par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.jump.id, 1200, 1));
             par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 1200, 1));
             par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.digSpeed.id, 1200, 1));
@@ -64,6 +64,6 @@ public class ItemBinggan extends ItemFcFood {
     }
 
     public String getUnlocalizedName(ItemStack is1) {
-        return s[is1.getMetadata()];
+        return s[is1.getItemDamage()];
     }
 }

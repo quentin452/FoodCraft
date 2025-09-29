@@ -24,7 +24,7 @@ public class RemoveRecipe {
     }
 
     public static void removeFurnace(ItemStack ItemStack) {
-        Map<ItemStack, ItemStack> recipes = FurnaceRecipes.instance().getSmeltingList();
+        Map<ItemStack, ItemStack> recipes = FurnaceRecipes.smelting().getSmeltingList();
 
         Iterator iterator = recipes.entrySet().iterator();
         Entry entry;
@@ -38,8 +38,8 @@ public class RemoveRecipe {
         recipes.remove((ItemStack) entry.getKey());
     }
 
-    private static boolean func_151397_a(ItemStack p_151397_1_, ItemStack p_151397_2_) {
-        return p_151397_2_.getItem() == p_151397_1_.getItem() && (p_151397_2_.getMetadata() == 32767 || p_151397_2_.getMetadata() == p_151397_1_.getMetadata());
+    private static boolean func_151397_a(ItemStack stack1, ItemStack stack2) {
+        return stack2.getItem() == stack1.getItem() &&
+            (stack2.getItemDamage() == 32767 || stack2.getItemDamage() == stack1.getItemDamage());
     }
-
 }

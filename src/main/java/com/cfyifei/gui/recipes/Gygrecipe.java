@@ -21,7 +21,7 @@ public class Gygrecipe {
         addrecipe(ModItem.ItemBaifan, ModItem.ItemBaifan, ModItem.ItemBaifan, new ItemStack(ModItem.ItemXifan, 3));
         addrecipe(Items.egg, ModItem.ItemJiangyou, ModItem.ItemCong, new ItemStack(ModItem.ItemDangeng));
         addrecipe(Item.getItemFromBlock(Blocks.brown_mushroom), ModItem.ItemJitui, ModItem.ItemYan, new ItemStack(ModItem.ItemMogudunjitang));
-        addrecipe(Items.cooked_fish, ModItem.ItemCong, ModItem.ItemCong, new ItemStack(ModItem.ItemQingzhenyu));
+        addrecipe(Items.cooked_fished, ModItem.ItemCong, ModItem.ItemCong, new ItemStack(ModItem.ItemQingzhenyu));
         addrecipe(ModItem.ItemBaifan, Items.egg, Items.cooked_porkchop, new ItemStack(ModItem.ItemPidanshourouzhou));
     }
 

@@ -49,13 +49,13 @@ public class BlockDouzi extends BlockCrops {
 
 
     @Override
-    protected Item getCrop() {
+    protected Item func_149865_P() {
         return ModItem.ItemDouzi;
     }
 
 
     @Override
-    protected Item getSeed() {
+    protected Item func_149866_i() {
         return ModItem.ItemDouzi;
     }
 
@@ -63,12 +63,12 @@ public class BlockDouzi extends BlockCrops {
     @Override
     public Item getItemDropped(int par1, Random par2Random, int par3) {
         if (par1 >= 7) {
-            return this.getSeed();
+            return this.func_149866_i();
         } else {
             if (par1 >= 5) {
                 return ModItem.ItemDoujiao;
             } else {
-                return this.getCrop();
+                return this.func_149865_P();
             }
         }
     }
@@ -79,7 +79,6 @@ public class BlockDouzi extends BlockCrops {
     }
 
     @SideOnly(Side.CLIENT)
-    @Override
     public void registerIcons(IIconRegister par1IconRegister) {
         this.icons = new IIcon[5];
 

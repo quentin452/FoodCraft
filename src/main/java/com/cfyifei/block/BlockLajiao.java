@@ -49,20 +49,20 @@ public class BlockLajiao extends BlockCrops {
 
 
     @Override
-    protected Item getCrop() {
+    protected Item func_149865_P() {
         return ModItem.ItemLajiaozhong;
     }
 
 
     @Override
-    protected Item getSeed() {
+    protected Item func_149866_i() {
         return ModItem.ItemLajiao;
     }
 
 
     @Override
     public Item getItemDropped(int par1, Random par2Random, int par3) {
-        return par1 >= 7 ? this.getSeed() : par1 >= 5 ? ModItem.ItemLajiao : this.getCrop();
+        return par1 >= 7 ? this.func_149866_i() : par1 >= 5 ? ModItem.ItemLajiao : this.func_149865_P();
     }
 
     @Override
@@ -71,7 +71,6 @@ public class BlockLajiao extends BlockCrops {
     }
 
     @SideOnly(Side.CLIENT)
-    @Override
     public void registerIcons(IIconRegister par1IconRegister) {
         this.icons = new IIcon[5];
 

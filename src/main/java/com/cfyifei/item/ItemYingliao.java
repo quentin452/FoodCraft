@@ -49,7 +49,7 @@ public class ItemYingliao extends ItemFood {
             if (e1 == 1) {
                 par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.resistance.id, 36000, 4));
                 par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.regeneration.id, 36000, 4));
-                par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.absorption.id, 36000, 4));
+                par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 36000, 4));
             }
         }
     }

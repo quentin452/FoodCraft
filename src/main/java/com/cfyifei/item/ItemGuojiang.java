@@ -20,7 +20,7 @@ public class ItemGuojiang extends Item {
 
     @SideOnly(Side.CLIENT)
     public boolean hasEffect(ItemStack p_77636_1_) {
-        return p_77636_1_.getMetadata() == 1;
+        return p_77636_1_.getItemDamage() == 1;
     }
 
     @SideOnly(Side.CLIENT)
@@ -48,6 +48,6 @@ public class ItemGuojiang extends Item {
     }
 
     public String getUnlocalizedName(ItemStack is1) {
-        return s[is1.getMetadata()];
+        return s[is1.getItemDamage()];
     }
 }

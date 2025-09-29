@@ -9,7 +9,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
 public class ItemCong extends Item {
-    private static final String __OBFID = "CL_00001773";
     private Block field_150935_a;
 
     public ItemCong(Block p_i45329_1_) {
@@ -65,7 +64,7 @@ public class ItemCong extends Item {
                         this.field_150935_a.onPostBlockPlaced(World, p_77648_4_, p_77648_5_, p_77648_6_, i1);
                     }
 
-                    World.playSoundEffect((double) ((float) p_77648_4_ + 0.5F), (double) ((float) p_77648_5_ + 0.5F), (double) ((float) p_77648_6_ + 0.5F), this.field_150935_a.stepSound.getPlaceSound(), (this.field_150935_a.stepSound.getVolume() + 1.0F) / 2.0F, this.field_150935_a.stepSound.frequency * 0.8F);
+                    World.playSoundEffect((double) ((float) p_77648_4_ + 0.5F), (double) ((float) p_77648_5_ + 0.5F), (double) ((float) p_77648_6_ + 0.5F), this.field_150935_a.stepSound.soundName, (this.field_150935_a.stepSound.getVolume() + 1.0F) / 2.0F, this.field_150935_a.stepSound.frequency * 0.8F);
                     --ItemStack.stackSize;
                 }
             }

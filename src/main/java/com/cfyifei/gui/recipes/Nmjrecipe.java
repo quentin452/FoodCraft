@@ -47,7 +47,7 @@ public class Nmjrecipe {
 
 
     private boolean GG(ItemStack ItemStack1, ItemStack ItemStack2) {
-        return ItemStack2.getItem() == ItemStack1.getItem() && (ItemStack2.getMetadata() == 32767 || ItemStack2.getMetadata() == ItemStack1.getMetadata());
+        return ItemStack2.getItem() == ItemStack1.getItem() && (ItemStack2.getItemDamage() == 32767 || ItemStack2.getItemDamage() == ItemStack1.getItemDamage());
     }
 
     public ItemStack getSmeltingResult(ItemStack itemStack) {

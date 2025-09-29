@@ -36,8 +36,8 @@ public class TileEntityCaiban extends TileEntity implements IInventory {
                         if (isst()) {
                             q = 0;
                             s();
-                            if (stack[0].getCurrentDurability() < stack[0].getMaxDurability()) {
-                                stack[0].setMetadata(stack[0].getMetadata() + 1);
+                            if (stack[0].getItemDamage() < stack[0].getMaxDamage()) {
+                                stack[0].setItemDamage(stack[0].getItemDamage() + 1);
                             } else {
                                 stack[0] = null;
                             }
@@ -51,8 +51,8 @@ public class TileEntityCaiban extends TileEntity implements IInventory {
 
                             q = iikk.event(worldObj, xCoord, yCoord, zCoord, vegetable, vegetable.stackSize);
                             s();
-                            if (stack[0].getMetadata() < iikk.getMaxUses()) {
-                                stack[0].setMetadata(stack[0].getMetadata() + 1);
+                            if (stack[0].getItemDamage() < iikk.getMaxUses()) {
+                                stack[0].setItemDamage(stack[0].getItemDamage() + 1);
                             } else {
                                 stack[0] = null;
                             }
@@ -195,17 +195,18 @@ public class TileEntityCaiban extends TileEntity implements IInventory {
         }
     }
 
+
     @Override
     public String getInventoryName() {
-
         return "Caiban";
     }
+
 
     /**
      * Returns if the inventory is named
      */
     @Override
-    public boolean isCustomInventoryName() {
+    public boolean hasCustomInventoryName() {
         return false;
     }
 
@@ -215,18 +216,19 @@ public class TileEntityCaiban extends TileEntity implements IInventory {
         return 64;
     }
 
+
     @Override
     public boolean isUseableByPlayer(EntityPlayer p_70300_1_) {
         return this.worldObj.getTileEntity(this.xCoord, this.yCoord, this.zCoord) != this ? false : p_70300_1_.getDistanceSq((double) this.xCoord + 0.5D, (double) this.yCoord + 0.5D, (double) this.zCoord + 0.5D) <= 64.0D;
     }
 
     @Override
-    public void openChest() {
+    public void openInventory() {
 
     }
 
     @Override
-    public void closeChest() {
+    public void closeInventory() {
 
     }
 
@@ -270,7 +272,7 @@ public class TileEntityCaiban extends TileEntity implements IInventory {
 
     @Override
     public void onDataPacket(NetworkManager net, S35PacketUpdateTileEntity packet) {
-        this.readFromNBT(packet.getNbtCompound());
+           this.readFromNBT(packet.func_148857_g());
     }
 
     @Override

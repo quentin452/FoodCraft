@@ -61,7 +61,7 @@ public class ModItem {
         ItemCaidao.setUnlocalizedName("ItemCaidao");
         ItemCaidao.setTextureName("FoodCraft:ItemCaidao");
         ItemCaidao.setCreativeTab(FoodCraft.FcTabJiqi);
-        ItemCaidao.setMaxDurability(59);
+        ItemCaidao.setMaxDamage(59);
         ItemCaidao.setMaxStackSize(1);
 
         ItemCaidaoHJ = new ItemCaidaoHJ();

@@ -72,7 +72,7 @@ public class Tpjrecipe {
     }
 
     private boolean GG(TpjMaking ItemStack1, TpjMaking ItemStack2) {
-        return ItemStack2.itemStack.getMetadata() == ItemStack1.itemStack.getMetadata() &&
+        return ItemStack2.itemStack.getItemDamage() == ItemStack1.itemStack.getItemDamage() &&
                 ItemStack2.itemStack.getItem() == ItemStack1.itemStack.getItem() &&
                 ItemStack2.isMilk == ItemStack1.isMilk &&
                 ItemStack2.isCold == ItemStack1.isCold

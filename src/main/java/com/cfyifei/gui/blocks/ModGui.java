@@ -24,49 +24,49 @@ public class ModGui {
 
     public static void init() {
         Tpj = new BlockTpj(false);
-        Tpj.setUnlocalizedName("Tpj");
+        Tpj.setBlockName("Tpj");
         Tpj.setHarvestLevel("pickaxe", 2);
         Tpj.setHardness(3f);
         Tpj.setStepSound(Block.soundTypeStone);
         Tpj.setCreativeTab(FoodCraft.FcTabJiqi);
 
         lit_Tpj = new BlockTpj(true);
-        lit_Tpj.setUnlocalizedName("litTpj");
+        lit_Tpj.setBlockName("litTpj");
         lit_Tpj.setHarvestLevel("pickaxe", 2);
         lit_Tpj.setHardness(3f);
         lit_Tpj.setStepSound(Block.soundTypeStone);
         lit_Tpj.setLightLevel(0.875F);
 
         Nmj = new BlockNmj(false);
-        Nmj.setUnlocalizedName("Nmj");
+        Nmj.setBlockName("Nmj");
         Nmj.setHarvestLevel("pickaxe", 2);
         Nmj.setHardness(3f);
         Nmj.setStepSound(Block.soundTypeStone);
         Nmj.setCreativeTab(FoodCraft.FcTabJiqi);
 
         lit_Nmj = new BlockNmj(true);
-        lit_Nmj.setUnlocalizedName("litNmj");
+        lit_Nmj.setBlockName("litNmj");
         lit_Nmj.setHarvestLevel("pickaxe", 2);
         lit_Nmj.setHardness(3f);
         lit_Nmj.setStepSound(Block.soundTypeStone);
         lit_Nmj.setLightLevel(0.875F);
 
         Zl = new BlockZl(false);
-        Zl.setUnlocalizedName("Zl");
+        Zl.setBlockName("Zl");
         Zl.setHarvestLevel("pickaxe", 2);
         Zl.setHardness(3f);
         Zl.setStepSound(Block.soundTypeStone);
         Zl.setCreativeTab(FoodCraft.FcTabJiqi);
 
         lit_Zl = new BlockZl(true);
-        lit_Zl.setUnlocalizedName("litZl");
+        lit_Zl.setBlockName("litZl");
         lit_Zl.setHarvestLevel("pickaxe", 2);
         lit_Zl.setHardness(3f);
         lit_Zl.setStepSound(Block.soundTypeStone);
         lit_Zl.setLightLevel(0.875F);
 
         Nt = new BlockNt(false);
-        Nt.setUnlocalizedName("Nt");
+        Nt.setBlockName("Nt");
         Nt.setHarvestLevel("pickaxe", 2);
         Nt.setHardness(3f);
         Nt.setStepSound(Block.soundTypeWood);
@@ -74,45 +74,45 @@ public class ModGui {
 
 
         YZJ = new BlockYZJ(false);
-        YZJ.setUnlocalizedName("YZJ");
+        YZJ.setBlockName("YZJ");
         YZJ.setHarvestLevel("pickaxe", 2);
         YZJ.setHardness(3f);
         YZJ.setStepSound(Block.soundTypeStone);
         YZJ.setCreativeTab(FoodCraft.FcTabJiqi);
 
         lit_YZJ = new BlockYZJ(true);
-        lit_YZJ.setUnlocalizedName("litYZJ");
+        lit_YZJ.setBlockName("litYZJ");
         lit_YZJ.setHarvestLevel("pickaxe", 2);
         lit_YZJ.setHardness(3f);
         lit_YZJ.setStepSound(Block.soundTypeStone);
         lit_YZJ.setLightLevel(0.875F);
 
         PDG = new BlockPDG(Material.rock);
-        PDG.setUnlocalizedName("PDG");
+        PDG.setBlockName("PDG");
         PDG.setHarvestLevel("pickaxe", 2);
         PDG.setStepSound(Block.soundTypeStone);
-        PDG.setTextureName("foodcraft:pdg_");
+        PDG.setBlockTextureName("foodcraft:pdg_");
         PDG.setCreativeTab(FoodCraft.FcTabJiqi);
 
         Guo = new BlockGuo(Material.rock);
-        Guo.setUnlocalizedName("Guo");
+        Guo.setBlockName("Guo");
         Guo.setHarvestLevel("pickaxe", 2);
         Guo.setStepSound(Block.soundTypeStone);
-        Guo.setTextureName("foodcraft:pdg_");
+        Guo.setBlockTextureName("foodcraft:pdg_");
         Guo.setCreativeTab(FoodCraft.FcTabJiqi);
 
         Gyg = new BlockGYG(Material.rock);
-        Gyg.setUnlocalizedName("Gyg");
+        Gyg.setBlockName("Gyg");
         Gyg.setHarvestLevel("pickaxe", 2);
         Gyg.setStepSound(Block.soundTypeStone);
-        Gyg.setTextureName("foodcraft:pdg_");
+        Gyg.setBlockTextureName("foodcraft:pdg_");
         Gyg.setCreativeTab(FoodCraft.FcTabJiqi);
 
         Caiban = new BlockCaiban(Material.rock);
-        Caiban.setUnlocalizedName("Caiban");
+        Caiban.setBlockName("Caiban");
         Caiban.setHarvestLevel("pickaxe", 2);
         Caiban.setStepSound(Block.soundTypeWood);
-        Caiban.setTextureName("foodcraft:pdg_");
+        Caiban.setBlockTextureName("foodcraft:pdg_");
         Caiban.setCreativeTab(FoodCraft.FcTabJiqi);
         GameRegistry.registerBlock(lit_Nmj, "lit_Milling machine");
         GameRegistry.registerBlock(Nmj, "Milling machine");

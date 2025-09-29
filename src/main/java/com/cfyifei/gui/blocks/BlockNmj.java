@@ -93,19 +93,19 @@ public class BlockNmj extends BlockContainer {
             Block block2 = World.getBlock(X - 1, Y, z);
             Block block3 = World.getBlock(X + 1, Y, z);
             int b0 = 3;
-            if (block.isFullBlock() && !block1.isFullBlock()) {
+            if (block.isOpaqueCube() && !block1.isOpaqueCube()) {
                 b0 = 3;
             }
 
-            if (block1.isFullBlock() && !block.isFullBlock()) {
+            if (block1.isOpaqueCube() && !block.isOpaqueCube()) {
                 b0 = 2;
             }
 
-            if (block2.isFullBlock() && !block3.isFullBlock()) {
+            if (block2.isOpaqueCube() && !block3.isOpaqueCube()) {
                 b0 = 5;
             }
 
-            if (block3.isFullBlock() && !block2.isFullBlock()) {
+            if (block3.isOpaqueCube() && !block2.isOpaqueCube()) {
                 b0 = 4;
             }
 
@@ -175,7 +175,7 @@ public class BlockNmj extends BlockContainer {
                             }
 
                             itemstack.stackSize -= j1;
-                            EntityItem entityitem = new EntityItem(World, (double) ((float) x + f), (double) ((float) y + f1), (double) ((float) z + f2), new ItemStack(itemstack.getItem(), j1, itemstack.getMetadata()));
+                            EntityItem entityitem = new EntityItem(World, (double) ((float) x + f), (double) ((float) y + f1), (double) ((float) z + f2), new ItemStack(itemstack.getItem(), j1, itemstack.getItemDamage()));
 
                             if (itemstack.hasTagCompound()) {
                                 entityitem.getEntityItem().setTagCompound((NBTTagCompound) itemstack.getTagCompound().copy());
@@ -190,7 +190,7 @@ public class BlockNmj extends BlockContainer {
                     }
                 }
 
-                World.updateNeighborsAboutBlockChange(x, y, z, Block);
+                World.notifyBlockOfNeighborChange(x, y, z, Block);
             }
 
 

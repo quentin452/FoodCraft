@@ -109,7 +109,7 @@ public class BlockGuo extends BlockContainer {
                         }
 
                         itemstack.stackSize -= j1;
-                        EntityItem entityitem = new EntityItem(World, (double) ((float) x + f), (double) ((float) y + f1), (double) ((float) z + f2), new ItemStack(itemstack.getItem(), j1, itemstack.getMetadata()));
+                        EntityItem entityitem = new EntityItem(World, (double) ((float) x + f), (double) ((float) y + f1), (double) ((float) z + f2), new ItemStack(itemstack.getItem(), j1, itemstack.getItemDamage()));
 
                         if (itemstack.hasTagCompound()) {
                             entityitem.getEntityItem().setTagCompound((NBTTagCompound) itemstack.getTagCompound().copy());
@@ -124,7 +124,7 @@ public class BlockGuo extends BlockContainer {
                 }
             }
 
-            World.updateNeighborsAboutBlockChange(x, y, z, Block);
+            World.notifyBlockOfNeighborChange(x, y, z, Block);
         }
 
 

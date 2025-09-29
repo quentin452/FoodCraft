@@ -27,7 +27,7 @@ public class ItemFoodJinpingguojiu extends ItemFood {
         par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 3600, 4));
         par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.resistance.id, 3600, 4));
         par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.regeneration.id, 3600, 4));
-        par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.absorption.id, 3600, 4));
+        par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 3600, 4));
     }
 
     public EnumAction getItemUseAction(ItemStack par1ItemStack) {

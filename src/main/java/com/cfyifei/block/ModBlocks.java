@@ -37,142 +37,142 @@ public class ModBlocks {
 
 
         BlockYumi = new BlockYumi();
-        BlockYumi.setUnlocalizedName("BlockYumi");
+        BlockYumi.setBlockName("BlockYumi");
         BlockYumi.setHarvestLevel("pickaxe", -1);
         BlockYumi.setStepSound(Block.soundTypeGrass);
 
         BlockHuanggua = new BlockHuanggua();
-        BlockHuanggua.setUnlocalizedName("BlockHuanggua");
+        BlockHuanggua.setBlockName("BlockHuanggua");
         BlockHuanggua.setHarvestLevel("pickaxe", -1);
         BlockHuanggua.setStepSound(Block.soundTypeGrass);
 
         BlockBailuobo = new BlockBailuobo();
-        BlockBailuobo.setUnlocalizedName("BlockBailuobo");
+        BlockBailuobo.setBlockName("BlockBailuobo");
         BlockBailuobo.setHarvestLevel("pickaxe", -1);
         BlockBailuobo.setStepSound(Block.soundTypeGrass);
 
         BlockQingjiao = new BlockQingjiao();
         
-        BlockQingjiao.setUnlocalizedName("BlockQingjiao");
+        BlockQingjiao.setBlockName("BlockQingjiao");
         BlockQingjiao.setHarvestLevel("pickaxe", -1);
         BlockQingjiao.setStepSound(Block.soundTypeGrass);
 
         BlockHongdou = new BlockHongdou();
-        BlockHongdou.setUnlocalizedName("BlockHongdou");
+        BlockHongdou.setBlockName("BlockHongdou");
         BlockHongdou.setHarvestLevel("pickaxe", -1);
         BlockHongdou.setStepSound(Block.soundTypeGrass);
 
         BlockLvdou = new BlockLvdou();
-        BlockLvdou.setUnlocalizedName("BlockLvdou");
+        BlockLvdou.setBlockName("BlockLvdou");
         BlockLvdou.setHarvestLevel("pickaxe", -1);
         BlockLvdou.setStepSound(Block.soundTypeGrass);
 
         BlockCaomei = new BlockCaomei();
-        BlockCaomei.setUnlocalizedName("BlockCaomei");
+        BlockCaomei.setBlockName("BlockCaomei");
         BlockCaomei.setHarvestLevel("pickaxe", -1);
         BlockCaomei.setStepSound(Block.soundTypeGrass);
 
         BlockHongshu = new BlockHongshu();
-        BlockHongshu.setUnlocalizedName("BlockHongshu");
+        BlockHongshu.setBlockName("BlockHongshu");
         BlockHongshu.setHarvestLevel("pickaxe", -1);
         BlockHongshu.setStepSound(Block.soundTypeGrass);
 
         BlockNuodao = new BlockNuodao();
-        BlockNuodao.setUnlocalizedName("BlockNuodao");
+        BlockNuodao.setBlockName("BlockNuodao");
         BlockNuodao.setHarvestLevel("pickaxe", -1);
         BlockNuodao.setStepSound(Block.soundTypeGrass);
 
         BlockShuidao = new BlockShuiDao();
-        BlockShuidao.setUnlocalizedName("BlockShuidao");
+        BlockShuidao.setBlockName("BlockShuidao");
         BlockShuidao.setHarvestLevel("pickaxe", -1);
         BlockShuidao.setStepSound(Block.soundTypeGrass);
 
         BlockDouzi = new BlockDouzi();
-        BlockDouzi.setUnlocalizedName("BlockDouzi");
+        BlockDouzi.setBlockName("BlockDouzi");
         BlockDouzi.setHarvestLevel("pickaxe", -1);
         BlockDouzi.setStepSound(Block.soundTypeGrass);
 
         BlockHuashen = new BlockHuashen();
-        BlockHuashen.setUnlocalizedName("BlockHuashen");
+        BlockHuashen.setBlockName("BlockHuashen");
         BlockHuashen.setHarvestLevel("pickaxe", -1);
         BlockHuashen.setStepSound(Block.soundTypeGrass);
 
         BlockShucai = new BlockShucai();
-        BlockShucai.setUnlocalizedName("BlockShucai");
+        BlockShucai.setBlockName("BlockShucai");
         BlockShucai.setHarvestLevel("pickaxe", -1);
         BlockShucai.setStepSound(Block.soundTypeGrass);
 
         BlockLajiao = new BlockLajiao();
-        BlockLajiao.setUnlocalizedName("BlockLajiao");
+        BlockLajiao.setBlockName("BlockLajiao");
         BlockLajiao.setHarvestLevel("pickaxe", -1);
         BlockLajiao.setStepSound(Block.soundTypeGrass);
 
         BlockFanqie = new BlockFanqie();
-        BlockFanqie.setUnlocalizedName("BlockFanqie");
+        BlockFanqie.setBlockName("BlockFanqie");
         BlockFanqie.setHarvestLevel("pickaxe", -1);
         BlockFanqie.setStepSound(Block.soundTypeGrass);
 
         BlockWaike = new BlockKB(Material.rock);
-        BlockWaike.setUnlocalizedName("BlockWaike");
+        BlockWaike.setBlockName("BlockWaike");
         BlockWaike.setHarvestLevel("pickaxe", 1);
         BlockWaike.setCreativeTab(FoodCraft.FcTabJiqi);
-        BlockWaike.setTextureName("foodcraft:nmj_side");
+        BlockWaike.setBlockTextureName("foodcraft:nmj_side");
         BlockWaike.setStepSound(Block.soundTypeStone);
 
         BlockQiezi = new BlockQiezi();
-        BlockQiezi.setUnlocalizedName("BlockQiezi");
+        BlockQiezi.setBlockName("BlockQiezi");
         BlockQiezi.setHarvestLevel("pickaxe", -1);
         BlockQiezi.setStepSound(Block.soundTypeGrass);
 
         BlockPutao = new BlockPutao();
-        BlockPutao.setUnlocalizedName("BlockPutao");
+        BlockPutao.setBlockName("BlockPutao");
         BlockPutao.setHarvestLevel("pickaxe", -1);
         BlockPutao.setStepSound(Block.soundTypeGrass);
 
         BlockCong = new BlockCong();
-        BlockCong.setHardness(0.0F).setStepSound(Block.soundTypeGrass).setUnlocalizedName("BlockCong");
-        BlockCong.setTextureName("FoodCraft:BlockCong");
+        BlockCong.setHardness(0.0F).setStepSound(Block.soundTypeGrass).setBlockName("BlockCong");
+        BlockCong.setBlockTextureName("FoodCraft:BlockCong");
 
-        Blocksugar = new BlockKB(Material.grass).setUnlocalizedName("Blocksugar").setTextureName("FoodCraft:blocksugar")
+        Blocksugar = new BlockKB(Material.grass).setBlockName("Blocksugar").setBlockTextureName("FoodCraft:blocksugar")
                 .setHardness(0.5F).setStepSound(Block.soundTypeSnow).setCreativeTab(FoodCraft.FcTabJiqi);
 
-        BlockDami = new BlockKB(Material.grass).setUnlocalizedName("BlockDami").setTextureName("FoodCraft:blockdami")
+        BlockDami = new BlockKB(Material.grass).setBlockName("BlockDami").setBlockTextureName("FoodCraft:blockdami")
                 .setHardness(0.5F).setStepSound(Block.soundTypeSnow).setCreativeTab(FoodCraft.FcTabJiqi);
 
-        BlockHuashenk = new BlockKB(Material.grass).setUnlocalizedName("BlockHuashenk").setTextureName("FoodCraft:blockhuashenk")
+        BlockHuashenk = new BlockKB(Material.grass).setBlockName("BlockHuashenk").setBlockTextureName("FoodCraft:blockhuashenk")
                 .setHardness(0.5F).setStepSound(Block.soundTypeSnow).setCreativeTab(FoodCraft.FcTabJiqi);
 
-        BlockLuobo = new BlockKB(Material.grass).setUnlocalizedName("BlockLuobo").setTextureName("FoodCraft:blockluobo")
+        BlockLuobo = new BlockKB(Material.grass).setBlockName("BlockLuobo").setBlockTextureName("FoodCraft:blockluobo")
                 .setHardness(0.5F).setStepSound(Block.soundTypeSnow).setCreativeTab(FoodCraft.FcTabJiqi);
 
-        BlockTudou = new BlockKB(Material.grass).setUnlocalizedName("BlockTudou").setTextureName("FoodCraft:blocktudou")
+        BlockTudou = new BlockKB(Material.grass).setBlockName("BlockTudou").setBlockTextureName("FoodCraft:blocktudou")
                 .setHardness(0.5F).setStepSound(Block.soundTypeSnow).setCreativeTab(FoodCraft.FcTabJiqi);
 
-        BlockYan = new BlockKB(Material.grass).setUnlocalizedName("BlockYan").setTextureName("FoodCraft:blockyan")
+        BlockYan = new BlockKB(Material.grass).setBlockName("BlockYan").setBlockTextureName("FoodCraft:blockyan")
                 .setHardness(0.5F).setStepSound(Block.soundTypeSnow).setCreativeTab(FoodCraft.FcTabJiqi);
 
-        BlockDouzik = new BlockKB(Material.grass).setUnlocalizedName("BlockDouzik").setTextureName("FoodCraft:blockdouzik")
+        BlockDouzik = new BlockKB(Material.grass).setBlockName("BlockDouzik").setBlockTextureName("FoodCraft:blockdouzik")
                 .setHardness(0.5F).setStepSound(Block.soundTypeSnow).setCreativeTab(FoodCraft.FcTabJiqi);
 
-        BlockRuomi = new BlockKB(Material.grass).setUnlocalizedName("BlockRuomi").setTextureName("FoodCraft:blockruomi")
+        BlockRuomi = new BlockKB(Material.grass).setBlockName("BlockRuomi").setBlockTextureName("FoodCraft:blockruomi")
                 .setHardness(0.5F).setStepSound(Block.soundTypeSnow).setCreativeTab(FoodCraft.FcTabJiqi);
 
-        BlockDouban = new BlockKB(Material.grass).setUnlocalizedName("BlockDouban").setTextureName("FoodCraft:blockdouban")
+        BlockDouban = new BlockKB(Material.grass).setBlockName("BlockDouban").setBlockTextureName("FoodCraft:blockdouban")
                 .setHardness(0.5F).setStepSound(Block.soundTypeSnow).setCreativeTab(FoodCraft.FcTabJiqi);
 
-        BlockQiaokeli = new BlockKB(Material.grass).setUnlocalizedName("BlockQiaokeli").setTextureName("FoodCraft:blockqiaokeli")
+        BlockQiaokeli = new BlockKB(Material.grass).setBlockName("BlockQiaokeli").setBlockTextureName("FoodCraft:blockqiaokeli")
                 .setHardness(0.5F).setStepSound(Block.soundTypeSnow).setCreativeTab(FoodCraft.FcTabJiqi);
 
 
-        BlockPutaoDG = new BlockDangao().setHardness(0.5F).setStepSound(Block.soundTypeCloth).setUnlocalizedName("BlockPutaoDG").setTextureName("FoodCraft:BlockPutaoDG");
+        BlockPutaoDG = new BlockDangao().setHardness(0.5F).setStepSound(Block.soundTypeCloth).setBlockName("BlockPutaoDG").setBlockTextureName("FoodCraft:BlockPutaoDG");
 
-        BlockJinputaoDG = new BlockJinputaoDG().setHardness(0.5F).setStepSound(Block.soundTypeCloth).setUnlocalizedName("BlockJinputaoDG").setTextureName("FoodCraft:BlockJinputaoDG");
-        BlockLiDG = new BlockDangao().setHardness(0.5F).setStepSound(Block.soundTypeCloth).setUnlocalizedName("BlockLiDG").setTextureName("FoodCraft:BlockLiDG");
-        BlockTaoziDG = new BlockDangao().setHardness(0.5F).setStepSound(Block.soundTypeCloth).setUnlocalizedName("BlockTaoziDG").setTextureName("FoodCraft:BlockTaoziDG");
-        BlockJuziDG = new BlockDangao().setHardness(0.5F).setStepSound(Block.soundTypeCloth).setUnlocalizedName("BlockJuziDG").setTextureName("FoodCraft:BlockJuziDG");
-        BlockNingmengDG = new BlockDangao().setHardness(0.5F).setStepSound(Block.soundTypeCloth).setUnlocalizedName("BlockNingmengDG").setTextureName("FoodCraft:BlockNingmengDG");
-        BlockCaomeiDG = new BlockDangao().setHardness(0.5F).setStepSound(Block.soundTypeCloth).setUnlocalizedName("BlockCaomeiDG").setTextureName("FoodCraft:BlockCaomeiDG");
-        BlockYeziDG = new BlockDangao().setHardness(0.5F).setStepSound(Block.soundTypeCloth).setUnlocalizedName("BlockYeziDG").setTextureName("FoodCraft:BlockYeziDG");
+        BlockJinputaoDG = new BlockJinputaoDG().setHardness(0.5F).setStepSound(Block.soundTypeCloth).setBlockName("BlockJinputaoDG").setBlockTextureName("FoodCraft:BlockJinputaoDG");
+        BlockLiDG = new BlockDangao().setHardness(0.5F).setStepSound(Block.soundTypeCloth).setBlockName("BlockLiDG").setBlockTextureName("FoodCraft:BlockLiDG");
+        BlockTaoziDG = new BlockDangao().setHardness(0.5F).setStepSound(Block.soundTypeCloth).setBlockName("BlockTaoziDG").setBlockTextureName("FoodCraft:BlockTaoziDG");
+        BlockJuziDG = new BlockDangao().setHardness(0.5F).setStepSound(Block.soundTypeCloth).setBlockName("BlockJuziDG").setBlockTextureName("FoodCraft:BlockJuziDG");
+        BlockNingmengDG = new BlockDangao().setHardness(0.5F).setStepSound(Block.soundTypeCloth).setBlockName("BlockNingmengDG").setBlockTextureName("FoodCraft:BlockNingmengDG");
+        BlockCaomeiDG = new BlockDangao().setHardness(0.5F).setStepSound(Block.soundTypeCloth).setBlockName("BlockCaomeiDG").setBlockTextureName("FoodCraft:BlockCaomeiDG");
+        BlockYeziDG = new BlockDangao().setHardness(0.5F).setStepSound(Block.soundTypeCloth).setBlockName("BlockYeziDG").setBlockTextureName("FoodCraft:BlockYeziDG");
 
         GameRegistry.registerBlock(BlockBailuobo, "BlockBailuobo");
         GameRegistry.registerBlock(BlockQingjiao, "BlockQingjiao");

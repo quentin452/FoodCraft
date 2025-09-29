@@ -42,8 +42,9 @@ public class ContainerYZJ extends Container {
         return true;
     }
 
-    public void onCraftGuiOpened(ICrafting par1ICrafting) {
-        super.onCraftGuiOpened(par1ICrafting);
+    @Override
+    public void addCraftingToCrafters(ICrafting par1ICrafting) {
+        super.addCraftingToCrafters(par1ICrafting);
         par1ICrafting.sendProgressBarUpdate(this, 0, this.furnaceIn.furnaceCookTime);
         par1ICrafting.sendProgressBarUpdate(this, 1, this.furnaceIn.tableBurnTime);
         par1ICrafting.sendProgressBarUpdate(this, 2, this.furnaceIn.currentItemBurnTime);

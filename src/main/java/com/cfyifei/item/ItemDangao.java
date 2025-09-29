@@ -27,7 +27,7 @@ public class ItemDangao extends Item {
 
     @SideOnly(Side.CLIENT)
     public boolean hasEffect(ItemStack p_77636_1_) {
-        return p_77636_1_.getMetadata() == 1;
+        return p_77636_1_.getItemDamage() == 1;
     }
 
     @SideOnly(Side.CLIENT)
@@ -55,7 +55,7 @@ public class ItemDangao extends Item {
     }
 
     public String getUnlocalizedName(ItemStack is1) {
-        return s[is1.getMetadata()];
+        return s[is1.getItemDamage()];
     }
 
     public boolean onItemUse(ItemStack p_77648_1_, EntityPlayer p_77648_2_, World p_77648_3_, int p_77648_4_, int p_77648_5_, int p_77648_6_, int p_77648_7_, float p_77648_8_, float p_77648_9_, float p_77648_10_) {
@@ -94,16 +94,16 @@ public class ItemDangao extends Item {
         } else if (p_77648_1_.stackSize == 0) {
             return false;
         } else {
-            if (p_77648_3_.canPlaceEntityOnSide(b[p_77648_1_.getMetadata()], p_77648_4_, p_77648_5_, p_77648_6_, false, p_77648_7_, (Entity) null, p_77648_1_)) {
-                int i1 = b[p_77648_1_.getMetadata()].onBlockPlaced(p_77648_3_, p_77648_4_, p_77648_5_, p_77648_6_, p_77648_7_, p_77648_8_, p_77648_9_, p_77648_10_, 0);
+            if (p_77648_3_.canPlaceEntityOnSide(b[p_77648_1_.getItemDamage()], p_77648_4_, p_77648_5_, p_77648_6_, false, p_77648_7_, (Entity) null, p_77648_1_)) {
+                int i1 = b[p_77648_1_.getItemDamage()].onBlockPlaced(p_77648_3_, p_77648_4_, p_77648_5_, p_77648_6_, p_77648_7_, p_77648_8_, p_77648_9_, p_77648_10_, 0);
 
-                if (p_77648_3_.setBlock(p_77648_4_, p_77648_5_, p_77648_6_, b[p_77648_1_.getMetadata()], i1, 3)) {
-                    if (p_77648_3_.getBlock(p_77648_4_, p_77648_5_, p_77648_6_) == b[p_77648_1_.getMetadata()]) {
-                        b[p_77648_1_.getMetadata()].onBlockPlacedBy(p_77648_3_, p_77648_4_, p_77648_5_, p_77648_6_, p_77648_2_, p_77648_1_);
-                        b[p_77648_1_.getMetadata()].onPostBlockPlaced(p_77648_3_, p_77648_4_, p_77648_5_, p_77648_6_, i1);
+                if (p_77648_3_.setBlock(p_77648_4_, p_77648_5_, p_77648_6_, b[p_77648_1_.getItemDamage()], i1, 3)) {
+                    if (p_77648_3_.getBlock(p_77648_4_, p_77648_5_, p_77648_6_) == b[p_77648_1_.getItemDamage()]) {
+                        b[p_77648_1_.getItemDamage()].onBlockPlacedBy(p_77648_3_, p_77648_4_, p_77648_5_, p_77648_6_, p_77648_2_, p_77648_1_);
+                        b[p_77648_1_.getItemDamage()].onPostBlockPlaced(p_77648_3_, p_77648_4_, p_77648_5_, p_77648_6_, i1);
                     }
 
-                    p_77648_3_.playSoundEffect((double) ((float) p_77648_4_ + 0.5F), (double) ((float) p_77648_5_ + 0.5F), (double) ((float) p_77648_6_ + 0.5F), b[p_77648_1_.getMetadata()].stepSound.getPlaceSound(), (b[p_77648_1_.getMetadata()].stepSound.getVolume() + 1.0F) / 2.0F, b[p_77648_1_.getMetadata()].stepSound.frequency * 0.8F);
+                    p_77648_3_.playSoundEffect((double) ((float) p_77648_4_ + 0.5F), (double) ((float) p_77648_5_ + 0.5F), (double) ((float) p_77648_6_ + 0.5F), b[p_77648_1_.getItemDamage()].stepSound.soundName, (b[p_77648_1_.getItemDamage()].stepSound.getVolume() + 1.0F) / 2.0F, b[p_77648_1_.getItemDamage()].stepSound.frequency * 0.8F);
                     --p_77648_1_.stackSize;
                 }
             }

@@ -8,7 +8,7 @@ import net.minecraft.world.World;
 public class ItemCaidaoHJ extends Item implements IItemKitchenKnife {
 
     public ItemCaidaoHJ() {
-        this.setMaxDurability(32);
+        this.setMaxDamage(32);
         this.setMaxStackSize(1);
     }
 

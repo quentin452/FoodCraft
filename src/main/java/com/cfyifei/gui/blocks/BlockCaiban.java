@@ -72,7 +72,7 @@ public class BlockCaiban extends BlockContainer {
     public boolean onBlockActivated(World par1World, int par2, int par3,
                                     int par4, EntityPlayer par5EntityPlayer, int par6, float par7,
                                     float par8, float par9) {
-        ItemStack stack = par5EntityPlayer.inventory.mainInventory[par5EntityPlayer.inventory.currentItem];
+    // ...existing code...
         par5EntityPlayer.openGui(FoodCraft.instance, GuiID.GUI_Caiban, par1World, par2, par3, par4);
         return true;
     }
@@ -98,7 +98,7 @@ public class BlockCaiban extends BlockContainer {
                         }
 
                         itemstack.stackSize -= j1;
-                        EntityItem entityitem = new EntityItem(World, (double) ((float) x + f), (double) ((float) y + f1), (double) ((float) z + f2), new ItemStack(itemstack.getItem(), j1, itemstack.getCurrentDurability()));
+                        EntityItem entityitem = new EntityItem(World, (double) ((float) x + f), (double) ((float) y + f1), (double) ((float) z + f2), new ItemStack(itemstack.getItem(), j1, itemstack.getItemDamage()));
 
                         if (itemstack.hasTagCompound()) {
                             entityitem.getEntityItem().setTagCompound((NBTTagCompound) itemstack.getTagCompound().copy());
@@ -113,7 +113,7 @@ public class BlockCaiban extends BlockContainer {
                 }
             }
 
-            World.updateNeighborsAboutBlockChange(x, y, z, Block);
+            World.notifyBlockOfNeighborChange(x, y, z, Block);
         }
 
 
