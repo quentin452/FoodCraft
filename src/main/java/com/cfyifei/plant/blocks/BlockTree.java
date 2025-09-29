@@ -2,6 +2,9 @@ package com.cfyifei.plant.blocks;
 
 import com.cfyifei.FoodCraft;
 import com.cfyifei.item.ModItem;
+
+import cpw.mods.fml.relauncher.SideOnly;
+import cpw.mods.fml.relauncher.Side;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBush;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -24,6 +27,11 @@ public class BlockTree extends BlockBush {
         float f = 0.4F;
         this.setBlockBounds(0.5F - f, 0.0F, 0.5F - f, 0.5F + f, f * 2.0F, 0.5F + f);
         this.setCreativeTab(FoodCraft.FcTabZhiwu);
+    }
+
+    public BlockTree(Block fruit, int name, String blockName) {
+        this(fruit, name);
+        this.setBlockName(blockName);
     }
 
     @Override
@@ -246,6 +254,7 @@ public class BlockTree extends BlockBush {
         return IIcon[name];
     }
 
+    @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister par1) {
 
         IIcon[0] = par1.registerIcon("foodcraft:BlockLishu");
@@ -256,7 +265,7 @@ public class BlockTree extends BlockBush {
         IIcon[5] = par1.registerIcon("foodcraft:BlockMangguoshu");
 
         IIcon[6] = par1.registerIcon("foodcraft:BlockNingmengshu");
-        IIcon[7] = par1.registerIcon("foodcraft:BlockBlockYouzishu");
+        IIcon[7] = par1.registerIcon("foodcraft:BlockYouzishu");
         IIcon[8] = par1.registerIcon("foodcraft:BlockShizishu");
         IIcon[9] = par1.registerIcon("foodcraft:BlockMuguashu");
         IIcon[10] = par1.registerIcon("foodcraft:BlockShanzhashu");

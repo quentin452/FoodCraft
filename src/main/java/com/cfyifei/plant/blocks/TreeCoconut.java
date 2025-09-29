@@ -2,6 +2,8 @@ package com.cfyifei.plant.blocks;
 
 import com.cfyifei.FoodCraft;
 import com.cfyifei.item.ModItem;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBush;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -22,6 +24,11 @@ public class TreeCoconut extends BlockBush {
         float f = 0.4F;
         this.setBlockBounds(0.5F - f, 0.0F, 0.5F - f, 0.5F + f, f * 2.0F, 0.5F + f);
         this.setCreativeTab(FoodCraft.FcTabZhiwu);
+    }
+
+    public TreeCoconut(Block fruit, String blockName) {
+        this(fruit);
+        this.setBlockName(blockName);
     }
 
     @Override
@@ -194,6 +201,7 @@ public class TreeCoconut extends BlockBush {
         return IIcon[0];
     }
 
+    @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister par1) {
 
         IIcon[0] = par1.registerIcon("foodcraft:BlockYezishu");

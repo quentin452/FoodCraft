@@ -53,7 +53,7 @@ public class BlockGYG extends BlockContainer {
     }
 
     //This is the icon to use for showing the block in your hand.
-    public void registerIcons(IIconRegister icon) {
+    public void registerBlockIcons(IIconRegister icon) {
         this.blockIcon = icon.registerIcon("foodcraft:textures/blocks/gyg.png");
     }
 

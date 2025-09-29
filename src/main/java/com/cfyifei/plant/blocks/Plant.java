@@ -31,143 +31,108 @@ public class Plant {
     public static void init() {
 
         FCleaves = new BlockFruit("FCleaves", Item.getItemFromBlock(Blocks.sapling));
-        FCleaves.setBlockName("FCleaves");
 
         BlockLi = new BlockFruit("BlockLi", ModItem.ItemLi);
-        BlockLi.setBlockName("BlockLi");
 
-        BlockLishu = new BlockTree(BlockLi, 0);
-        BlockLishu.setBlockName("BlockLishu");
+        BlockLishu = new BlockTree(BlockLi, 0, "BlockLishu");
         BlockLishu.setHarvestLevel("pickaxe", -1);
         BlockLishu.setStepSound(Block.soundTypeGrass);
 
         BlockLizhi = new BlockFruit("BlockLizhi", ModItem.ItemLizhi);
-        BlockLizhi.setBlockName("BlockLizhi");
 
-        BlockLizhishu = new BlockTree(BlockLizhi, 1);
-        BlockLizhishu.setBlockName("BlockLizhishu");
+        BlockLizhishu = new BlockTree(BlockLizhi, 1, "BlockLizhishu");
         BlockLizhishu.setHarvestLevel("pickaxe", -1);
         BlockLizhishu.setStepSound(Block.soundTypeGrass);
 
         BlockTaozi = new BlockFruit("BlockTaozi", ModItem.ItemTaozi);
-        BlockTaozi.setBlockName("BlockTaozi");
 
-        BlockTaozishu = new BlockTree(BlockTaozi, 2);
-        BlockTaozishu.setBlockName("BlockTaozishu");
+        BlockTaozishu = new BlockTree(BlockTaozi, 2, "BlockTaozishu");
         BlockTaozishu.setHarvestLevel("pickaxe", -1);
         BlockTaozishu.setStepSound(Block.soundTypeGrass);
 
         BlockJuzi = new BlockFruit("BlockJuzi", ModItem.ItemJuzi);
-        BlockJuzi.setBlockName("BlockJuzi");
 
-        BlockJuzishu = new BlockTree(BlockJuzi, 3);
-        BlockJuzishu.setBlockName("BlockJuzishu");
+        BlockJuzishu = new BlockTree(BlockJuzi, 3, "BlockJuzishu");
         BlockJuzishu.setHarvestLevel("pickaxe", -1);
         BlockJuzishu.setStepSound(Block.soundTypeGrass);
 
         BlockPipa = new BlockFruit("BlockPipa", ModItem.ItemPipa);
-        BlockPipa.setBlockName("BlockPipa");
 
-        BlockPipashu = new BlockTree(BlockPipa, 4);
-        BlockPipashu.setBlockName("BlockPipashu");
+        BlockPipashu = new BlockTree(BlockPipa, 4, "BlockPipashu");
         BlockPipashu.setHarvestLevel("pickaxe", -1);
         BlockPipashu.setStepSound(Block.soundTypeGrass);
 
         BlockMangguo = new BlockFruit("BlockMangguo", ModItem.ItemMangguo);
-        BlockMangguo.setBlockName("BlockMangguo");
 
-        BlockMangguoshu = new BlockTree(BlockMangguo, 5);
-        BlockMangguoshu.setBlockName("BlockMangguoshu");
+        BlockMangguoshu = new BlockTree(BlockMangguo, 5, "BlockMangguoshu");
         BlockMangguoshu.setHarvestLevel("pickaxe", -1);
         BlockMangguoshu.setStepSound(Block.soundTypeGrass);
 //********************************************************************************	
 
 
         BlockNingmeng = new BlockFruit("BlockNingmeng", ModItem.ItemNingmeng);
-        BlockNingmeng.setBlockName("BlockNingmeng");
 
-        BlockNingmengshu = new BlockTree(BlockNingmeng, 6);
-        BlockNingmengshu.setBlockName("BlockNingmengshu");
+        BlockNingmengshu = new BlockTree(BlockNingmeng, 6, "BlockNingmengshu");
         BlockNingmengshu.setHarvestLevel("pickaxe", -1);
         BlockNingmengshu.setStepSound(Block.soundTypeGrass);
 
         BlockYouzi = new BlockFruit("BlockYouzi", ModItem.ItemYouzi);
-        BlockYouzi.setBlockName("BlockYouzi");
 
-        BlockYouzishu = new BlockTree(BlockYouzi, 7);
-        BlockYouzishu.setBlockName("BlockYouzishu");
+        BlockYouzishu = new BlockTree(BlockYouzi, 7, "BlockYouzishu");
         BlockYouzishu.setHarvestLevel("pickaxe", -1);
         BlockYouzishu.setStepSound(Block.soundTypeGrass);
 
         BlockShizi = new BlockFruit("BlockShizi", ModItem.ItemShizi);
-        BlockShizi.setBlockName("BlockShizi");
 
-        BlockShizishu = new BlockTree(BlockShizi, 8);
-        BlockShizishu.setBlockName("BlockShizishu");
+        BlockShizishu = new BlockTree(BlockShizi, 8, "BlockShizishu");
         BlockShizishu.setHarvestLevel("pickaxe", -1);
         BlockShizishu.setStepSound(Block.soundTypeGrass);
 
         BlockMugua = new BlockFruit("BlockMugua", ModItem.ItemMugua);
-        BlockMugua.setBlockName("BlockMugua");
 
-        BlockMuguashu = new BlockTree(BlockMugua, 9);
-        BlockMuguashu.setBlockName("BlockMuguashu");
+        BlockMuguashu = new BlockTree(BlockMugua, 9, "BlockMuguashu");
         BlockMuguashu.setHarvestLevel("pickaxe", -1);
         BlockMuguashu.setStepSound(Block.soundTypeGrass);
 
         BlockShanzha = new BlockFruit("BlockShanzha", ModItem.ItemShanzha);
-        BlockShanzha.setBlockName("BlockShanzha");
 
-        BlockShanzhashu = new BlockTree(BlockShanzha, 10);
-        BlockShanzhashu.setBlockName("BlockShanzhashu");
+        BlockShanzhashu = new BlockTree(BlockShanzha, 10, "BlockShanzhashu");
         BlockShanzhashu.setHarvestLevel("pickaxe", -1);
         BlockShanzhashu.setStepSound(Block.soundTypeGrass);
 
         BlockLongyan = new BlockFruit("BlockLongyan", ModItem.ItemLongyan);
-        BlockLongyan.setBlockName("BlockLongyan");
 
-        BlockLongyanshu = new BlockTree(BlockLongyan, 11);
-        BlockLongyanshu.setBlockName("BlockLongyanshu");
+        BlockLongyanshu = new BlockTree(BlockLongyan, 11, "BlockLongyanshu");
         BlockLongyanshu.setHarvestLevel("pickaxe", -1);
         BlockLongyanshu.setStepSound(Block.soundTypeGrass);
 
         BlockShiliu = new BlockFruit("BlockShiliu", ModItem.ItemShiliu);
-        BlockShiliu.setBlockName("BlockShiliu");
 
-        BlockShiliushu = new BlockTree(BlockShiliu, 12);
-        BlockShiliushu.setBlockName("BlockShiliushu");
+        BlockShiliushu = new BlockTree(BlockShiliu, 12, "BlockShiliushu");
         BlockShiliushu.setHarvestLevel("pickaxe", -1);
         BlockShiliushu.setStepSound(Block.soundTypeGrass);
 
         BlockHongzao = new BlockFruit("BlockHongzao", ModItem.ItemHongzao);
-        BlockHongzao.setBlockName("BlockHongzao");
 
-        BlockHongzaoshu = new BlockTree(BlockHongzao, 13);
-        BlockHongzaoshu.setBlockName("BlockHongzaoshu");
+        BlockHongzaoshu = new BlockTree(BlockHongzao, 13, "BlockHongzaoshu");
         BlockHongzaoshu.setHarvestLevel("pickaxe", -1);
         BlockHongzaoshu.setStepSound(Block.soundTypeGrass);
 
         BlockYezi = new BlockCoconut("BlockYezi", ModItem.ItemYezi);
-        BlockYezi.setBlockName("BlockYezi");
 
-        BlockYezishu = new TreeCoconut(BlockYezi);
-        BlockYezishu.setBlockName("BlockYezishu");
+        BlockYezishu = new TreeCoconut(BlockYezi, "BlockYezishu");
         BlockYezishu.setHarvestLevel("pickaxe", -1);
         BlockYezishu.setStepSound(Block.soundTypeGrass);
 
         BlockYingtao = new BlockFruit("BlockYingtao", ModItem.ItemYingtao);
-        BlockYingtao.setBlockName("BlockYingtao");
 
-        BlockYingtaoshu = new BlockTree(BlockYingtao, 14);
-        BlockYingtaoshu.setBlockName("BlockYingtaoshu");
+        BlockYingtaoshu = new BlockTree(BlockYingtao, 14, "BlockYingtaoshu");
         BlockYingtaoshu.setHarvestLevel("pickaxe", -1);
         BlockYingtaoshu.setStepSound(Block.soundTypeGrass);
 
         BlockXiangjiao = new BlockBannana("BlockXiangjiao", ModItem.ItemXiangjiao);
-        BlockXiangjiao.setBlockName("BlockXiangjiao");
 
-        BlockXiangjiaoshu = new TreeBannana(BlockXiangjiao);
-        BlockXiangjiaoshu.setBlockName("BlockXiangjiaoshu");
+        BlockXiangjiaoshu = new TreeBannana(BlockXiangjiao, "BlockXiangjiaoshu");
         BlockXiangjiaoshu.setHarvestLevel("pickaxe", -1);
         BlockXiangjiaoshu.setStepSound(Block.soundTypeGrass);
 

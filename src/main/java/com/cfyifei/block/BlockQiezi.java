@@ -71,7 +71,7 @@ public class BlockQiezi extends BlockCrops {
     }
 
     @SideOnly(Side.CLIENT)
-    public void registerIcons(IIconRegister par1IconRegister) {
+    public void registerBlockIcons(IIconRegister par1IconRegister) {
         this.icons = new IIcon[5];
 
         for (int i = 0; i < this.icons.length; ++i) {

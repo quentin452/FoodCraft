@@ -42,7 +42,7 @@ public class ModItem {
             ItemYezizhi, ItemYingtaozhi, ItemXiangjiaozhi, ItemYenai, ItemLizhizhiice, ItemTaozizhiice, ItemJuzizhiice, ItemMangguozhiice,
             ItemNingmengzhiice, ItemMuguazhiice, ItemCaomeizhiice, ItemYezizhiice, ItemXiangjiaozhiice, ItemLizijiu, ItemLizhijiu,
             ItemTaozijiu, ItemMangguojiu, ItemNingmengjiu, ItemShiliujiu, ItemGuojiang, ItemBinggan, ItemDangao,
-            ItemCaidaoHJ, ItemCaidaoZS, ItemCaidaoLBS, ItemBingganF, ItemBingganXN, ItemTest;
+            ItemCaidaoHJ, ItemCaidaoZS, ItemCaidaoLBS, ItemBingganF, ItemBingganXN;
 
     public static void init() {
         //���˹���
@@ -1182,10 +1182,6 @@ public class ModItem {
                 .setTextureName("FoodCraft:ItemBinggan").setCreativeTab(FoodCraft.FcTabXiaodian);
         ItemBingganXN = new ItemFcFood(3, 7F, false, "ItemBingganXN").setUnlocalizedName("ItemBingganXN")
                 .setTextureName("FoodCraft:ItemBingganXN").setCreativeTab(FoodCraft.FcTabXiaodian);
-
-        ItemTest = new ItemTest().setUnlocalizedName("ItemTest")
-                .setTextureName("FoodCraft:ItemTest").setCreativeTab(CreativeTabs.tabTools);
-        GameRegistry.registerItem(ItemTest, "ItemTest");
         /**
          *------------------------------ ��������  ------------------------------
          */

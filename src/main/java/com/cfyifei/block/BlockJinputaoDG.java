@@ -26,7 +26,7 @@ public class BlockJinputaoDG extends BlockCake {
     }
 
     @SideOnly(Side.CLIENT)
-    public void registerIcons(IIconRegister p_149651_1_) {
+    public void registerBlockIcons(IIconRegister p_149651_1_) {
         this.blockIcon = p_149651_1_.registerIcon(this.getTextureName() + "_side");
         this.field_150039_M = p_149651_1_.registerIcon("cake_inner");
         this.field_150038_a = p_149651_1_.registerIcon(this.getTextureName() + "_top");
